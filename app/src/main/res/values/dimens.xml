@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragment_horizontal_margin">24dp</dimen>
+    <dimen name="fragment_top_padding">48dp</dimen>
+    <dimen name="fragment_content_top">8dp</dimen>
+    <dimen name="item_height_big">96dp</dimen>
+    <dimen name="item_height">72dp</dimen>
+    <dimen name="divider_height">0.8dp</dimen>
+</resources>

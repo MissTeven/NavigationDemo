@@ -1,0 +1,59 @@
+ext {
+    versionCode = 1
+    versionName = '1.0.0'
+    compileSdkVersion = 28
+    buildToolsVersion = "28.0.3"
+    minSdkVersion = 19
+    targetSdkVersion = 28
+    navigationVersion = "1.0.0-alpha08"
+    javaVersion = JavaVersion.VERSION_1_8
+
+    version = [
+            androidSupportSdk     : "28.0.0",
+            retrofit              : "2.4.0",
+            rxlifecycle2SdkVersion: "2.2.1",
+            glideSdkVersion       : "4.6.1",
+            dagger2SdkVersion     : "2.16"
+    ]
+
+    dependencies = [
+            // support
+            "support-v4"                   : "com.android.support:support-v4:${version["androidSupportSdk"]}",
+            "appcompat-v7"                 : "com.android.support:appcompat-v7:${version["androidSupportSdk"]}",
+            "design"                       : "com.android.support:design:${version["androidSupportSdk"]}",
+            "cardview"                     : "com.android.support:cardview-v7:${version["androidSupportSdk"]}",
+            "recyclerview"                 : "com.android.support:recyclerview-v7:${version["androidSupportSdk"]}",
+            "constraint-layout"            : "com.android.support.constraint:constraint-layout:1.0.2",
+
+            //network
+            "retrofit"                     : "com.squareup.retrofit2:retrofit:${version["retrofit"]}",
+            "converterGson"                : "com.squareup.retrofit2:converter-gson:${version["retrofit"]}",
+            "adapterRxjava"                : "com.squareup.retrofit2:adapter-rxjava2:${version["retrofit"]}",
+            "okhttp"                       : "com.squareup.okhttp3:okhttp:3.10.0",
+            "loggingInterceptor"           : "com.squareup.okhttp3:logging-interceptor:3.5.0",
+            "glide"                        : "com.github.bumptech.glide:glide:${version["glideSdkVersion"]}",
+            "glide-compiler"               : "com.github.bumptech.glide:compiler:${version["glideSdkVersion"]}",
+            "glide-loader-okhttp3"         : "com.github.bumptech.glide:okhttp3-integration:${version["glideSdkVersion"]}",
+
+            //view
+            "BaseRecyclerViewAdapterHelper": "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40",
+
+            //rx2
+            "rxjava"                       : "io.reactivex.rxjava2:rxjava:2.0.1",
+            "rxandroid"                    : "io.reactivex.rxjava2:rxandroid:2.0.1",
+            "rxPermission"                 : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar",
+            "rxbinding"                    : "com.jakewharton.rxbinding2:rxbinding:2.2.0",
+            "EasyAndroid"                  : "com.github.yjfnypeu:EasyAndroid:1.1.5",
+
+            //tools
+            "dagger2"                      : "com.google.dagger:dagger:${version["dagger2SdkVersion"]}",
+            "dagger2-android"              : "com.google.dagger:dagger-android:${version["dagger2SdkVersion"]}",
+            "dagger2-android-support"      : "com.google.dagger:dagger-android-support:${version["dagger2SdkVersion"]}",
+            "dagger2-compiler"             : "com.google.dagger:dagger-compiler:${version["dagger2SdkVersion"]}",
+            "dagger2-android-processor"    : "com.google.dagger:dagger-android-processor:${version["dagger2SdkVersion"]}",
+            "gson"                         : "com.google.code.gson:gson:2.8.0",
+            "eventbus"                     : "org.greenrobot:eventbus:3.0.0",
+            "zxing"                        : "com.google.zxing:core:3.3.3",
+            "walle"                        : "com.meituan.android.walle:library:1.1.6",
+    ]
+}

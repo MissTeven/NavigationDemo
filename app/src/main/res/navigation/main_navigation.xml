@@ -1,0 +1,32 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/netContainerFragment">
+    <keep_state_fragment
+        android:id="@+id/netContainerFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.test.TestCrossLevelContainerFragment"
+        android:label="@string/net"
+        tools:layout="@layout/fragment_net_container" />
+
+    <keep_state_fragment
+        android:id="@+id/blueToolFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.BlueToolFragment"
+        android:label="@string/blue_tool"
+        tools:layout="@layout/fragment_blue_tool" />
+    <keep_state_fragment
+        android:id="@+id/screenFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.ScreenFragment"
+        android:label="@string/screen"
+        tools:layout="@layout/fragment_screen" />
+    <keep_state_fragment
+        android:id="@+id/soundFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.SoundFragment"
+        android:label="@string/sound"
+        tools:layout="@layout/fragment_sound" />
+    <keep_state_fragment
+        android:id="@+id/commonFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.CommonFragment"
+        android:label="@string/common"
+        tools:layout="@layout/fragment_common" />
+</navigation>

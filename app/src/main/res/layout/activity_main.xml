@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.oaksdance.navigationdemo.ui.MainActivity">
+
+    <com.jidouauto.ui.oushang.sideBar.JSideBar
+        android:id="@+id/sidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:backRes="@mipmap/ic_cancel"
+        app:menuIconsRes="@array/menu_icons"
+        app:menuPressedIconsRes="@array/menu_pressed_icons"
+        app:menuTextsRes="@array/menu_titles"
+        app:titleRes="@string/system_setting" />
+
+    <fragment
+        android:id="@+id/main_nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true" />
+</LinearLayout>

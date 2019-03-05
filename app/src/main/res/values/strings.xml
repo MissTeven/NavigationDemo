@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">设置</string>
+
+    <string name="net">网络</string>
+    <string name="blue_tool">蓝牙</string>
+    <string name="screen">显示</string>
+    <string name="sound">声音</string>
+    <string name="common">通用</string>
+    <string name="system_setting">系统设置</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_net_fragment">Hello net fragment</string>
+    <string name="hello_screen_fragment">Hello screen fragment</string>
+    <string name="hello_sound_fragment">Hello sound fragment</string>
+    <string name="hello_blue_tool_fragment">Hello blue tool fragment</string>
+    <string name="hello_common_fragment">Hello common fragment</string>
+    <string name="wifi">WiFi</string>
+    <string name="hot">热点</string>
+    <string name="wifi_switch">WI-FI网络开关</string>
+    <string name="instruction_to_open_wifi">要查看可用网络，请打开WiFi开关</string>
+    <string name="hot_name">热点名称</string>
+    <string name="hot_switch">热点开关</string>
+    <string name="equipment_name">设备名称</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="hot_password">热点密码</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_test_fragment">Hello Test Fragment</string>
+
+</resources>

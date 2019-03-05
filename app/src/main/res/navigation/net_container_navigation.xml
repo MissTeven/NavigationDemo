@@ -1,0 +1,34 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/netContainerFragment">
+    <fragment
+        android:id="@+id/netContainerFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.net.NetFragment"
+        android:label="@string/net"
+        tools:layout="@layout/fragment_net">
+        <action
+            android:id="@+id/action_netContainerFragment_to_updateNameFragment"
+            app:destination="@id/updateNameFragment" />
+        <action
+            android:id="@+id/action_netContainerFragment_to_updatePasswordFragment"
+            app:destination="@id/updatePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateNameFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.net.hot.UpdateNameFragment"
+        android:label="UpdateNameFragment">
+        <action
+            android:id="@+id/action_pop_up_from_updateNameFragment"
+            app:popUpTo="@id/netContainerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePasswordFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.net.hot.UpdatePasswordFragment"
+        android:label="UpdatePasswordFragment">
+        <action
+            android:id="@+id/action_pop_up_from_updatePasswordFragment"
+            app:popUpTo="@id/netContainerFragment" />
+    </fragment>
+</navigation>

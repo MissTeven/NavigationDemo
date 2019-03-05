@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="menu_titles">
+        <item>@string/net</item>
+        <item>@string/blue_tool</item>
+        <item>@string/screen</item>
+        <item>@string/sound</item>
+        <item>@string/common</item>
+    </integer-array>
+    <integer-array name="menu_icons">
+        <item>@mipmap/ic_net</item>
+        <item>@mipmap/ic_blue_tool</item>
+        <item>@mipmap/ic_screen</item>
+        <item>@mipmap/ic_sound</item>
+        <item>@mipmap/ic_common</item>
+    </integer-array>
+    <integer-array name="menu_pressed_icons">
+        <item>@mipmap/ic_net_selected</item>
+        <item>@mipmap/ic_blue_tool_selected</item>
+        <item>@mipmap/ic_screen_selected</item>
+        <item>@mipmap/ic_sound_selected</item>
+        <item>@mipmap/ic_common_selected</item>
+    </integer-array>
+</resources>

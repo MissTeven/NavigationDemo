@@ -1,0 +1,16 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/wiFiFragment">
+    <keep_state_fragment
+        android:id="@+id/wiFiFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.net.wifi.WiFiFragment"
+        android:label="fragment_net_wifi"
+        tools:layout="@layout/fragment_net_wifi" />
+    <keep_state_fragment
+        android:id="@+id/hotFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.net.hot.HotFragment"
+        android:label="fragment_net_hot"
+        tools:layout="@layout/fragment_net_hot" />
+</navigation>
