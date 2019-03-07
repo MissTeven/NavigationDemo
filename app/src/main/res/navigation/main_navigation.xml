@@ -2,12 +2,12 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/netContainerFragment">
+    app:startDestination="@+id/testCrossLevelFragment">
     <keep_state_fragment
-        android:id="@+id/netContainerFragment"
-        android:name="com.oaksdance.navigationdemo.ui.fragment.test.TestCrossLevelContainerFragment"
-        android:label="@string/net"
-        tools:layout="@layout/fragment_net_container" />
+        android:id="@+id/testCrossLevelFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.test.TestCrossLevelFragment"
+        android:label="TestCrossLevelFragment"
+        tools:layout="@layout/fragment_test_cross_level" />
 
     <keep_state_fragment
         android:id="@+id/blueToolFragment"

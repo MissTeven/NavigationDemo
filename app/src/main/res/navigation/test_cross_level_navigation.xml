@@ -1,0 +1,18 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/test1ContainerFragment">
+    <keep_state_fragment
+        android:id="@+id/test1ContainerFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.test.test1.Test1ContainerFragment"
+        android:label="Test1ContainerFragment" />
+    <keep_state_fragment
+        android:id="@+id/test2Fragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.test.test2.Test2Fragment"
+        android:label="Test2Fragment" />
+    <keep_state_fragment
+        android:id="@+id/test3Fragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.net.NetContainerFragment"
+        android:label="Test3Fragment" />
+</navigation>

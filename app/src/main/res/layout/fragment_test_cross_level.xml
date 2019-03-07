@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.oaksdance.navigationdemo.ui.fragment.test.TestCrossLevelFragment">
+
+    <RadioGroup
+        android:id="@+id/rg_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_test1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_title"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_test2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="测试2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_title" />
+
+        <RadioButton
+            android:id="@+id/rb_test3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="测试3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_title" />
+    </RadioGroup>
+
+    <fragment
+        android:id="@+id/test_cross_level_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/fragment_content_top"
+        app:defaultNavHost="true"
+        />
+</LinearLayout>

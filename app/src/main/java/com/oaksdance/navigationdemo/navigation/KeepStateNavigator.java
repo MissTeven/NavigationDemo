@@ -20,7 +20,8 @@ public class KeepStateNavigator extends FragmentNavigator {
     private final int containerId;
 
     @Nullable
-    public NavDestination navigate(@NonNull Destination destination, @Nullable Bundle args, @Nullable NavOptions navOptions, @Nullable Extras navigatorExtras) {
+    @Override
+    public NavDestination navigate(@NonNull Destination destination, @Nullable Bundle args, @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
         String tag = String.valueOf(destination.getId());
         FragmentTransaction transaction = this.manager.beginTransaction();
         Fragment currentFragment = this.manager.getPrimaryNavigationFragment();
@@ -41,10 +42,6 @@ public class KeepStateNavigator extends FragmentNavigator {
         transaction.setReorderingAllowed(true);
         transaction.commit();
         return destination;
-    }
-
-    public NavDestination navigate(NavDestination destination, Bundle bundle, NavOptions options, Extras extras) {
-        return this.navigate((Destination) destination, bundle, options, extras);
     }
 
     public KeepStateNavigator(@NonNull Context context, @NonNull FragmentManager manager, int containerId) {

@@ -1,0 +1,22 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/test1Fragment">
+    <fragment
+        android:id="@+id/test1Fragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.test.test1.Test1Fragment"
+        android:label="Test1Fragment">
+        <action
+            android:id="@+id/action_test1Fragment_to_child1Fragment"
+            app:destination="@id/child1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/child1Fragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.test.test1.Child1Fragment"
+        android:label="Child1Fragment">
+        <action
+            android:id="@+id/action_child1Fragment_popUpTo_test1Fragment"
+            app:popUpTo="@id/test1Fragment" />
+    </fragment>
+</navigation>

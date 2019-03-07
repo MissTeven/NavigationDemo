@@ -1,4 +1,4 @@
-package com.oaksdance.navigationdemo.ui.fragment.test;
+package com.oaksdance.navigationdemo.ui.fragment.test.test3;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,18 +10,20 @@ import android.view.ViewGroup;
 import com.jidouauto.setting.R;
 import com.oaksdance.navigationdemo.base.BaseFragment;
 
-/**
- * 测试跨级KeepStateNavigator下的fragment的生命周期
- */
-public class TestCrossLevelContainerFragment extends BaseFragment {
+public class Test3Fragment extends BaseFragment {
 
-    public static TestCrossLevelContainerFragment getInstance() {
-        return new TestCrossLevelContainerFragment();
+    public static Test3Fragment getInstance() {
+        return new Test3Fragment();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_test_container, container, false);
+        return inflater.inflate(R.layout.fragment_test3, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 }
