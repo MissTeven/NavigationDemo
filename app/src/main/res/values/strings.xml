@@ -31,5 +31,5 @@
     <string name="hello_test1_fragment">Hello Test1 Fragment</string>
     <string name="hello_test3_fragment">Hello Test3 Fragment</string>
     <string name="hello_test2_fragment">Hello Test2 Fragment</string>
-
+    <string name="test">测试跨级管理</string>
 </resources>

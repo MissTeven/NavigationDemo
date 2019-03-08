@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.oaksdance.navigationdemo.ui.fragment.test.TestCrossLevelFragment">
+    tools:context="com.oaksdance.navigationdemo.ui.fragment.test.TestCrossLevelContainerFragment">
 
     <RadioGroup
         android:id="@+id/rg_test"

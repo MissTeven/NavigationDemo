@@ -1,4 +1,4 @@
-### 配置虚拟机尺寸：
+###  配置虚拟机尺寸：
 
     generic_x86:/ $ wm density
     wm density

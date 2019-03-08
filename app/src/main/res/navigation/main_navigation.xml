@@ -5,10 +5,9 @@
     app:startDestination="@+id/testCrossLevelFragment">
     <keep_state_fragment
         android:id="@+id/testCrossLevelFragment"
-        android:name="com.oaksdance.navigationdemo.ui.fragment.test.TestCrossLevelFragment"
+        android:name="com.oaksdance.navigationdemo.ui.fragment.test.TestCrossLevelContainerFragment"
         android:label="TestCrossLevelFragment"
-        tools:layout="@layout/fragment_test_cross_level" />
-
+        tools:layout="@layout/fragment_test_cross_level_container" />
     <keep_state_fragment
         android:id="@+id/blueToolFragment"
         android:name="com.oaksdance.navigationdemo.ui.fragment.BlueToolFragment"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer-array name="menu_titles">
-        <item>@string/net</item>
+        <item>@string/test</item>
         <item>@string/blue_tool</item>
         <item>@string/screen</item>
         <item>@string/sound</item>
@@ -21,4 +21,5 @@
         <item>@mipmap/ic_sound_selected</item>
         <item>@mipmap/ic_common_selected</item>
     </integer-array>
+
 </resources>
