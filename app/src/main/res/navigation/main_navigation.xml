@@ -2,7 +2,9 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/testCrossLevelFragment">
+    app:startDestination="@+id/testCrossLevelFragment"> <!--startDestination 表示初始destination-->
+
+    <!--keep_state_fragment 表示一个destination节点，节点标签名keep_state_fragment可自定义-->
     <keep_state_fragment
         android:id="@+id/testCrossLevelFragment"
         android:name="com.oaksdance.navigationdemo.ui.fragment.test.TestCrossLevelContainerFragment"

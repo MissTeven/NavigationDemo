@@ -26,14 +26,11 @@ public class MainActivity extends BaseActivity {
 
         // get fragment
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.main_nav_host_fragment);
-
         // setup custom navigator
         Navigator navigator = new KeepStateNavigator(this, navHostFragment.getChildFragmentManager(), R.id.main_nav_host_fragment);
         navHostFragment.getNavController().getNavigatorProvider().addNavigator(navigator);
-
         // set navigation graph
         navHostFragment.getNavController().setGraph(R.navigation.main_navigation);
-
         if (savedInstanceState == null) {
             position = 0;
         }
