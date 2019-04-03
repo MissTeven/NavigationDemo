@@ -39,12 +39,12 @@ public class MainActivity extends BaseActivity {
         NavOptions options = null;
         if (position > lastPosition) {
             options = new NavOptions.Builder()
-                    .setEnterAnim(R.anim.slide_top_in)
+                    .setEnterAnim(R.anim.slide)
                     .setExitAnim(R.anim.slide_bottom_out)
                     .build();
         } else if (position < lastPosition) {
             options = new NavOptions.Builder()
-                    .setEnterAnim(R.anim.slide_bottom_in)
+                    .setEnterAnim(R.anim.slide)
                     .setExitAnim(R.anim.slide_top_out)
                     .build();
         }

@@ -8,6 +8,7 @@
     android:paddingStart="@dimen/fragment_horizontal_margin"
     android:paddingTop="@dimen/fragment_top_padding"
     android:paddingEnd="@dimen/fragment_horizontal_margin"
+    android:background="@color/bg_window"
     tools:context="com.oaksdance.navigationdemo.ui.fragment.net.NetFragment">
     <LinearLayout
         android:layout_width="wrap_content"

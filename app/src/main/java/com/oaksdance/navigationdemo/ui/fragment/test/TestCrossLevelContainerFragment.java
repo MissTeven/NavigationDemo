@@ -71,12 +71,12 @@ public class TestCrossLevelContainerFragment extends BaseFragment {
         NavOptions options = null;
         if (position > mLastPosition) {
             options = new NavOptions.Builder()
-                    .setEnterAnim(R.anim.slide_right_in)
+                    .setEnterAnim(R.anim.slide)
                     .setExitAnim(R.anim.slide_left_out)
                     .build();
         } else if (position < mLastPosition) {
             options = new NavOptions.Builder()
-                    .setEnterAnim(R.anim.slide_left_in)
+                    .setEnterAnim(R.anim.slide)
                     .setExitAnim(R.anim.slide_right_out)
                     .build();
         }

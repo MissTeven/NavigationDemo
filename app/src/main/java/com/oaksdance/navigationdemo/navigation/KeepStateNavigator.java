@@ -27,7 +27,7 @@ public class KeepStateNavigator extends FragmentNavigator {
         String tag = String.valueOf(destination.getId());
         FragmentTransaction transaction = this.manager.beginTransaction();
 
-        int enterAnim = navOptions != null ? navOptions.getEnterAnim() : -1;
+        int enterAnim = navOptions != null ? navOptions.getEnterAnim() : R.anim.slide;
         int exitAnim = navOptions != null ? navOptions.getExitAnim() : -1;
         int popEnterAnim = navOptions != null ? navOptions.getPopEnterAnim() : -1;
         int popExitAnim = navOptions != null ? navOptions.getPopExitAnim() : -1;
@@ -54,7 +54,7 @@ public class KeepStateNavigator extends FragmentNavigator {
         }
 
         transaction.setPrimaryNavigationFragment(fragment);
-        transaction.setReorderingAllowed(true);
+        transaction.setReorderingAllowed(false);
         transaction.commit();
         return destination;
     }

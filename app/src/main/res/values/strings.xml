@@ -9,11 +9,11 @@
     <string name="system_setting">系统设置</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_net_fragment">Hello net fragment</string>
-    <string name="hello_screen_fragment">Hello screen fragment</string>
-    <string name="hello_sound_fragment">Hello sound fragment</string>
-    <string name="hello_blue_tool_fragment">Hello blue tool fragment</string>
-    <string name="hello_common_fragment">Hello common fragment</string>
+    <string name="hello_net_fragment">Hello net fragment Hello net fragment Hello net \n fragment Hello net fragment Hello net fragment Hello net fragment Hello  \n net fragment Hello net fragment Hello net fragment Hello net fragment  \n  Hello net fragment Hello net fragment</string>
+    <string name="hello_screen_fragment">Hello screen fragment Hello screen fragment Hello screen  \n fragment Hello screen fragment Hello screen fragment Hello screen fragment  \n  Hello screen fragment Hello screen fragment Hello screen fragment Hello screen fragment</string>
+    <string name="hello_sound_fragment">Hello sound fragment Hello sound fragment Hello sound fragment  \n Hello sound fragment Hello sound fragment Hello sound fragment  \n  Hello sound fragment Hello sound fragment Hello sound fragment Hello sound fragment  \n  Hello sound fragment Hello sound fragment</string>
+    <string name="hello_blue_tool_fragment">Hello blue tool fragment Hello blue tool fragment  \n Hello blue tool fragment Hello blue tool fragment  \n  Hello blue tool fragment Hello blue tool fragment Hello blue tool fragment  \n  Hello blue tool fragment Hello blue tool fragment</string>
+    <string name="hello_common_fragment">Hello common fragment Hello common fragment  \n  Hello common fragment Hello common fragment Hello common fragment  \n Hello common fragment Hello common fragment Hello common fragment  \n  Hello common fragment Hello common fragment Hello common fragment Hello common fragment</string>
     <string name="wifi">WiFi</string>
     <string name="hot">热点</string>
     <string name="wifi_switch">WI-FI网络开关</string>
@@ -26,10 +26,10 @@
     <string name="hot_password">热点密码</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="hello_test_fragment">Hello Test Fragment</string>
-    <string name="hello_test1_fragment">Hello Test1 Fragment</string>
-    <string name="hello_test3_fragment">Hello Test3 Fragment</string>
-    <string name="hello_test2_fragment">Hello Test2 Fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment Hello blank fragment Hello blank  \n fragment Hello blank fragment Hello blank fragment Hello blank fragment Hello blank fragment  \n Hello blank fragment Hello blank fragment Hello blank fragment</string>
+    <string name="hello_test_fragment">Hello Test Fragment Hello Test Fragment  \n Hello Test Fragment Hello Test Fragment Hello Test Fragment  \n Hello Test Fragment Hello Test Fragment  \n Hello Test Fragment Hello Test Fragment Hello Test Fragment</string>
+    <string name="hello_test1_fragment">Hello Test1 Fragment Hello Test1 Fragment  \n  Hello Test1 Fragment Hello Test1 Fragment  \n  Hello Test1 Fragment Hello Test1 Fragment Hello Test1 Fragment  \n  Hello Test1 Fragment Hello Test1 Fragment Hello Test1 Fragment </string>
+    <string name="hello_test3_fragment">Hello Test3 Fragment Hello Test3 Fragment  \n Hello Test3 Fragment Hello Test3 Fragment Hello Test3 Fragment  \n Hello Test3 Fragment Hello Test3 Fragment Hello Test3 Fragment Hello Test3 Fragment</string>
+    <string name="hello_test2_fragment">Hello Test3 Fragment Hello Test3 Fragment \n  Hello Test3 Hello Test3 Fragment Hello Test3 Fragment  \n Hello Test3 Hello Test3 Fragment Hello Test3 Fragment Hello Test3 </string>
     <string name="test">测试跨级管理</string>
 </resources>

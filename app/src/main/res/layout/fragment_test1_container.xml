@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff444"
+    android:background="@color/bg_window"
     tools:context="com.oaksdance.navigationdemo.ui.fragment.test.test1.Test1ContainerFragment">
 
     <fragment
