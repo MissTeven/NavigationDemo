@@ -17,22 +17,18 @@ public class HotFragment extends BaseFragment {
         return new HotFragment();
     }
 
-    private View mContentView;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if (mContentView == null) {
-            mContentView = inflater.inflate(R.layout.fragment_net_hot, container, false);
-            JRouteBar rb_hot_name = mContentView.findViewById(R.id.rb_hot_name);
-            JRouteBar rb_hot_password = mContentView.findViewById(R.id.rb_hot_password);
-            rb_hot_name.setOnClickListener(v -> {
-                NavigationUtil.takeAction(HotFragment.this, R.id.net_container_host_fragment, R.id.action_netContainerFragment_to_updateNameFragment);
-            });
-            rb_hot_password.setOnClickListener(v -> {
-                NavigationUtil.takeAction(HotFragment.this, R.id.net_container_host_fragment, R.id.action_netContainerFragment_to_updatePasswordFragment);
-            });
-        }
+        View mContentView = inflater.inflate(R.layout.fragment_net_hot, container, false);
+        JRouteBar rb_hot_name = mContentView.findViewById(R.id.rb_hot_name);
+        JRouteBar rb_hot_password = mContentView.findViewById(R.id.rb_hot_password);
+        rb_hot_name.setOnClickListener(v -> {
+            NavigationUtil.takeAction(HotFragment.this, R.id.net_container_host_fragment, R.id.action_netContainerFragment_to_updateNameFragment);
+        });
+        rb_hot_password.setOnClickListener(v -> {
+            NavigationUtil.takeAction(HotFragment.this, R.id.net_container_host_fragment, R.id.action_netContainerFragment_to_updatePasswordFragment);
+        });
         return mContentView;
     }
 }

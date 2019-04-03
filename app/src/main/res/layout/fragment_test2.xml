@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/text_color_333333"
     tools:context="com.oaksdance.navigationdemo.ui.fragment.CommonFragment">
 
     <TextView
@@ -10,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Test2页面进入详情界面"
+        android:text=""
         android:textColor="@color/white" />
 
 </FrameLayout>

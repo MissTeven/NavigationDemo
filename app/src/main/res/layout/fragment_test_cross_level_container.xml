@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#444fff"
     tools:context="com.oaksdance.navigationdemo.ui.fragment.test.TestCrossLevelContainerFragment">
 
     <RadioGroup

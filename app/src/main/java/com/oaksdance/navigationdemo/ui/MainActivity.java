@@ -9,21 +9,23 @@ import com.oaksdance.navigationdemo.base.BaseActivity;
 import com.oaksdance.navigationdemo.navigation.KeepStateNavigator;
 import com.jidouauto.ui.oushang.sideBar.JSideBar;
 
+import androidx.navigation.NavOptions;
 import androidx.navigation.Navigation;
 import androidx.navigation.Navigator;
 import androidx.navigation.fragment.NavHostFragment;
 
 public class MainActivity extends BaseActivity {
     private static final String TAG = "MainActivity";
-    private int position;
+    private int mPosition;
     private Fragment mCurrentFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ((JSideBar) findViewById(R.id.sidebar)).setMenuItemSelectListener((position, item) -> showFragment(position)).showMenus();
-
+        ((JSideBar) findViewById(R.id.sidebar)).setMenuItemSelectListener((position, item) -> {
+            showFragment(position, mPosition);
+        }).showMenus();
         // get fragment
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.main_nav_host_fragment);
         // setup custom navigator
@@ -31,16 +33,23 @@ public class MainActivity extends BaseActivity {
         navHostFragment.getNavController().getNavigatorProvider().addNavigator(navigator);
         // set navigation graph
         navHostFragment.getNavController().setGraph(R.navigation.main_navigation);
-        if (savedInstanceState == null) {
-            position = 0;
-        }
-        if (position > 0) {
-            showFragment(position);
-        }
     }
 
-    private void showFragment(int position) {
-        Navigation.findNavController(this, R.id.main_nav_host_fragment).navigate(getResId(position));
+    private void showFragment(int position, int lastPosition) {
+        NavOptions options = null;
+        if (position > lastPosition) {
+            options = new NavOptions.Builder()
+                    .setEnterAnim(R.anim.slide_top_in)
+                    .setExitAnim(R.anim.slide_bottom_out)
+                    .build();
+        } else if (position < lastPosition) {
+            options = new NavOptions.Builder()
+                    .setEnterAnim(R.anim.slide_bottom_in)
+                    .setExitAnim(R.anim.slide_top_out)
+                    .build();
+        }
+        mPosition = position;
+        Navigation.findNavController(this, R.id.main_nav_host_fragment).navigate(getResId(position), null, options);
     }
 
     private int getResId(int position) {

@@ -33,7 +33,7 @@ public class UpdateNameFragment extends BaseRemovableFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View content = inflater.inflate(R.layout.fragment_net_hot_update_name, container, false);
         content.findViewById(R.id.btn_back).setOnClickListener(v -> {
-//            NavigationUtil.takeAction(UpdateNameFragment.this, R.id.net_container_host_fragment, R.id.action_pop_up_from_updateNameFragment);
+//            JNavigationUtil.takeAction(UpdateNameFragment.this, R.id.net_container_host_fragment, R.id.action_pop_up_from_updateNameFragment);
 
             NavHostFragment.findNavController(UpdateNameFragment.this).navigate(R.id.action_pop_up_from_updateNameFragment);
         });

@@ -13,7 +13,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 public class NavigationUtil {
-    private static final String TAG = "NavigationUtil";
+    private static final String TAG = "JNavigationUtil";
     public static void takeAction(Fragment f, int fragmentId, int actionId) {
         Observable.create(new ObservableOnSubscribe<NavController>() {
             @Override

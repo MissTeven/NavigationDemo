@@ -50,7 +50,7 @@ dependencies {
     implementation 'android.arch.navigation:navigation-fragment:' + rootProject.navigationVersion
     implementation 'android.arch.navigation:navigation-ui:' + rootProject.navigationVersion
 
-    implementation 'com.jidouauto.ui:oushang:1.2.4beta'
+    implementation 'com.jidouauto.ui:oushang:1.2.22beta'
 
     implementation rootProject.ext.dependencies["constraint-layout"]
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

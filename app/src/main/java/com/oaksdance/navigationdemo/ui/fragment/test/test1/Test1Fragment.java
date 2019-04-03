@@ -18,7 +18,7 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class Test1Fragment extends BaseFragment {
     private static final String TAG = "Test1Fragment";
-
+    private View mView;
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -42,6 +42,7 @@ public class Test1Fragment extends BaseFragment {
         view.findViewById(R.id.tv_push).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                getFragmentManager().beginTransaction();
                 NavHostFragment.findNavController(Test1Fragment.this).navigate(R.id.action_test1Fragment_to_child1Fragment);
             }
         });
@@ -50,7 +51,7 @@ public class Test1Fragment extends BaseFragment {
 
     @Override
     public void onDestroyView() {
-        Log.d(TAG, "onDestroyView: ");
+        Log.d(TAG, "onDestroyView: "+System.currentTimeMillis());
         super.onDestroyView();
     }
 
