@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_especial">32sp</dimen>
+    <dimen name="text_size_nav">28.8sp</dimen>
+    <dimen name="text_size_title">25.6sp</dimen>
+    <dimen name="text_size_sub_title">22.4sp</dimen>
+    <dimen name="text_size_content">27.2sp</dimen>
+    <dimen name="text_size_sub_content">19.2sp</dimen>
+
+    <dimen name="corner_dialog">8dp</dimen>
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="padding_vertical_dialog_content">38.4dp</dimen>
+    <dimen name="dialog_width">640dp</dimen>
+    <dimen name="item_height_normal">64dp</dimen>
+    <dimen name="sidebar_width">256dp</dimen>
+    <dimen name="item_height_menu">88dp</dimen>
+    <dimen name="sidebar_header_height">104dp</dimen>
+    <dimen name="dialog_bottom_btn_height">72dp</dimen>
+    <dimen name="dialog_bar_height">64dp</dimen>
+    <dimen name="sidebar_title_drawable_padding">13.6dp</dimen>
+    <dimen name="sidebar_menu_drawable_padding">24dp</dimen>
+    <dimen name="toast_side_padding">48dp</dimen>
+    <dimen name="toast_top_padding">27.2dp</dimen>
+    <dimen name="toast_bottom_padding">@dimen/toast_top_padding</dimen>
+    <dimen name="toast_height">80dp</dimen>
+    <dimen name="tip_view_size">192dp</dimen>
+    <dimen name="tip_icon">64dp</dimen>
+    <dimen name="tip_space">24dp</dimen>
+    <dimen name="corner_tip">8dp</dimen>
+    <dimen name="tab_btn_height">56dp</dimen>
+    <dimen name="corner_tab_btn">28dp</dimen>
+    <dimen name="tab_btn_min_width">192dp</dimen>
+    <dimen name="button_height">64dp</dimen>
+    <dimen name="button_min_width">180.8dp</dimen>
+    <dimen name="corner_button">8dp</dimen>
+    <dimen name="scrollbar_size">4.8dp</dimen>
+    <dimen name="seek_bar_max_height">3.2dp</dimen>
+    <dimen name="seek_bar_min_height">3.2dp</dimen>
+    <dimen name="seek_bar_side_padding">25dp</dimen>
+    <dimen name="btn_side_padding">16dp</dimen>
+    <dimen name="tab_btn_stroke_width">2.4dp</dimen>
+    <dimen name="button_stroke_width">1.6dp</dimen>
+    <dimen name="switch_track_width">76.8dp</dimen>
+    <dimen name="switch_track_height">33.6dp</dimen>
+    <dimen name="switch_corner">4dp</dimen>
+    <dimen name="switch_thumb_width">40dp</dimen>
+    <dimen name="switch_thumb_height">@dimen/switch_track_height</dimen>
+    <dimen name="push_arrow_drawable_padding">17.6dp</dimen>
+    <dimen name="wheel_recycler_view_item_height">48dp</dimen>
+
+    <dimen name="status_bar_height">36dp</dimen>
+
+
+</resources>

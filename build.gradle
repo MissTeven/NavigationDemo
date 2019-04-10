@@ -22,14 +22,6 @@ allprojects {
         jcenter()
         google()
         maven { url "https://jitpack.io" }
-        maven {
-            url 'http://192.168.2.199:8081/artifactory/libs-release-local'
-            credentials {
-                username 'billlu'
-                password '123456'
-            }
-            maven { url 'https://maven.aliyun.com/repository/google' }
-        }
     }
     gradle.projectsEvaluated {
         tasks.withType(JavaCompile) {

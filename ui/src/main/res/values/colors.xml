@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#37BEF0</color>
+
+    <color name="white">#ffffff</color>
+    <color name="bg_window">#FF12172E</color>
+    <color name="project_color">#FF37BEF0</color>
+    <color name="text_color_333333">#333333</color>
+    <color name="text_color_999999">#999999</color>
+    <color name="text_color_cccccc">#cccccc</color>
+    <color name="color_bg_dialog">#313967</color>
+    <color name="color_divider_dialog">#33ffffff</color>
+    <color name="color_bg_bottom_dialog">#262C4F</color>
+    <color name="color_bg_sideBar">#1F274C</color>
+    <color name="color_bg_tip">#CC000000</color>
+    <color name="color_switch_track_on">#38B528</color>
+    <color name="color_switch_track_off">#52576F</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_bg_pressed">#4D000000</color>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:id="@+id/ll_main_container"
+            android:layout_width="@dimen/dialog_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_dialog"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_bar_height"
+                android:orientation="horizontal">
+
+                <com.jidouauto.ui.oushang.widget.JImageButton
+                    android:id="@+id/iv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:src="@mipmap/ic_cancel" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/tip"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_title" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider_dialog" />
+
+            <FrameLayout
+                android:id="@+id/fl_content_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/padding_vertical_dialog_content"
+                android:paddingBottom="@dimen/padding_vertical_dialog_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_btns_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_bottom_btn_height"
+                android:background="@drawable/bg_bottom_dialog"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

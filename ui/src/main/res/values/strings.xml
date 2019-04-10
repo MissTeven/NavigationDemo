@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">oushang</string>
+    <string name="tip">提示</string>
+    <string name="have_known">知道了</string>
+    <string name="loading">正在加载</string>
+    <string name="complete">完成</string>
+    <string name="failure">失败</string>
+    <string name="title">标题</string>
+    <string name="description">描述</string>
+</resources>

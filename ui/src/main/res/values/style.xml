@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TabButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/tab_btn_min_width</item>
+        <item name="android:layout_height">@dimen/tab_btn_height</item>
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/selector_tab_text_color</item>
+        <item name="android:background">@drawable/background_tab_btn</item>
+        <item name="android:state_activated">false</item>
+    </style>
+
+    <style name="SolidButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:paddingStart">@dimen/btn_side_padding</item>
+        <item name="android:paddingEnd">@dimen/btn_side_padding</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/selector_btn_text_color_solid</item>
+        <item name="android:background">@drawable/bg_btn_solid</item>
+    </style>
+
+    <style name="HollowButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:paddingStart">@dimen/btn_side_padding</item>
+        <item name="android:paddingEnd">@dimen/btn_side_padding</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/selector_btn_text_color_hollow</item>
+        <item name="android:background">@drawable/bg_btn_hollow</item>
+    </style>
+
+    <style name="InsideShadowButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/selector_btn_text_color_inside_shadow</item>
+        <item name="android:background">@drawable/bg_btn_inside_shadow_normal</item>
+    </style>
+
+    <style name="RecyclerViewHorizontalScrollBarStyle">
+        <item name="android:scrollbarSize">@dimen/scrollbar_size</item>
+        <item name="android:scrollbarStyle">outsideInset</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/scrollbar_thumb</item>
+        <item name="android:scrollbarTrackHorizontal">@drawable/scrollbar_track</item>
+        <item name="android:scrollbars">horizontal</item>
+    </style>
+
+    <style name="SeekBarStyle">
+        <item name="android:maxHeight">@dimen/seek_bar_max_height</item>
+        <item name="android:minHeight">@dimen/seek_bar_min_height</item>
+        <item name="android:paddingStart">@dimen/seek_bar_side_padding</item>
+        <item name="android:paddingEnd">@dimen/seek_bar_side_padding</item>
+        <item name="android:progressDrawable">@drawable/progress_seek_bar</item>
+        <item name="android:thumb">@mipmap/ic_thumb_seek_bar</item>
+    </style>
+
+    <style name="SwitchStyle">
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="android:track">@drawable/selector_switch_track</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/bg_window</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>
